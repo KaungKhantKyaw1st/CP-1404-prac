@@ -1,4 +1,5 @@
 """Intermediate Exercises"""
+"""KKK"""
 
 COLOUR_TO_CODE = {
     "Absolute Zero": "#0048ba",
