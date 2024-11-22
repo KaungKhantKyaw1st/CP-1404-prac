@@ -1,5 +1,5 @@
 """Band Class for CP1406"""
-
+""""""
 
 class Band:
     def __init__(self, band=""):
