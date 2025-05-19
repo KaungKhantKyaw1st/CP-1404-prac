@@ -1,3 +1,4 @@
+"""KK"""
 word_to_count = {}
 text = input("Enter your text: ")
 words = text.split()
