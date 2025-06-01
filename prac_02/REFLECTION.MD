@@ -1,8 +1,8 @@
 1.What percentage of the lecture videos have you watched so far?
-    Probably around 85%
+    Probably around 85% so far 
 
 2.What time, location and duration have you scheduled to watch lecture videos?
-    I have scheduled to watch lecture videos from 8:00 PM to 9:30 PM on weekdays at home, ensuring I can focus without interruptions.
+    I have scheduled to watch lecture videos from 8:00 PM to 9:30 PM on weekdays at home, ensuring I can focus without interruptions.So that I can improve
 
 3.What are you doing well in the subject so far that you will keep doing?
     I’m staying consistent with note-taking during lectures and completing assignments on time. I will continue with my organized approach to reviewing and revising notes after each lecture.
