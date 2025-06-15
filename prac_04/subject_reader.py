@@ -24,3 +24,4 @@ def display_subject_data(subjects):
         print(f"{subject[0]} is taught by {subject[1]} and has {subject[2]} students enrolled.")  # Altered print message slightly
 
 main()
+

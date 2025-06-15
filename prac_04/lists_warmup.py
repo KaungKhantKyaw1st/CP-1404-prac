@@ -14,3 +14,5 @@ numbers[-1] = 100            # Changing the last element to 100
 print(numbers[2:])           # Printing from the third element onward
 print(9 in numbers)          # Checking if 9 is in the list
 
+
+
