@@ -24,3 +24,5 @@ def display_income_report(incomes, total_months):  # Renamed parameters for cons
 
 main()
 
+
+
