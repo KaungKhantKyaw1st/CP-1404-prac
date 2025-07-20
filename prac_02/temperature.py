@@ -1,19 +1,32 @@
+MENU = """C - Conversion from Celsius to Fahrenheit
+    F - Conversion from Fahrenheit to Celsius
+    Q - Quit"""
+
 def main():
-    celsius_temp = float(input("Enter temperature in Celsius: "))
-    fahrenheit_temp = [0]  # List to hold the converted Fahrenheit temperature
-    celsius_to_fahrenheit(celsius_temp, fahrenheit_temp)
-    print(f"{celsius_temp}°C is {fahrenheit_temp[0]}°F")
+    """Temperature Conversion"""
+    print(MENU)
+    choice = input(">>> ").upper()
+    while choice != "Q":
+        if choice == "C":
+            celsius = float(input("Celsius: "))
+            fahrenheit = conversion_from_celsius_to_fahrenheit(celsius)
+            print(f"Result: {fahrenheit:.2f} F")
+        elif choice == "F":
+            fahrenheit = float(input("Fahrenheit : "))
+            celsius = conversion_from_fahrenheit_to_celsius(fahrenheit)
+            print(f"Result: {celsius:.2f} C")
+        else:
+            print("Invalid option")
+        print(MENU)
+        choice = input(">>> ").upper()
+    print("Thank you.")
 
-    fahrenheit_temp_input = float(input("Enter temperature in Fahrenheit: "))
-    celsius_temp_converted = [0]  # List to hold the converted Celsius temperature
-    fahrenheit_to_celsius(fahrenheit_temp_input, celsius_temp_converted)
-    print(f"{fahrenheit_temp_input}°F is {celsius_temp_converted[0]}°C")
+def conversion_from_celsius_to_fahrenheit(celsius):
+    """Converting Celsius to Fahrenheit"""
+    return celsius * 9.0 / 5 + 32
 
-def celsius_to_fahrenheit(celsius, fahrenheit):
-    """Converts Celsius to Fahrenheit and updates the fahrenheit list."""
-    fahrenheit[0] = (celsius * 9 / 5) + 32
+def conversion_from_fahrenheit_to_celsius(fahrenheit):
+    """Converting Fahrenheit to Celius"""
+    return 5 / 9 * (fahrenheit - 32)
 
-def fahrenheit_to_celsius(fahrenheit, celsius):
-    """Converts Fahrenheit to Celsius and updates the celsius list."""
-    celsius[0] = (fahrenheit - 32) * 5 / 9
 main()
