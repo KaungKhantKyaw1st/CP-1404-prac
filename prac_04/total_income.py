@@ -23,3 +23,6 @@ def display_income_report(incomes, total_months):  # Renamed parameters for cons
         print(f"Month {month_index:2} - Income: ${monthly_income:10.2f} | Cumulative Total: ${cumulative_total:10.2f}")
 
 main()
+
+
+
