@@ -1,24 +1,17 @@
-import random
-
 def main():
-    """Main function to handle score input, process results, and print outputs."""
-    user_score = int(input("Enter your score: "))
-    user_result = [""]
-    get_score_result(user_score, user_result)
-    print(f"Your result: {user_result[0]}")
+    """Score Classification Program"""
+    score = float(input("Enter score: "))
+    print(decide_condition(score))
 
-    random_score = random.randint(0, 100)
-    random_result = [""]
-    get_score_result(random_score, random_result)
-    print(f"Random score: {random_score}, Result: {random_result[0]}")
-def get_score_result(score, result):
-    """Determine the result based on the score and update the result list."""
+def decide_condition(score):
+    """Deciding score condition"""
     if score < 0 or score > 100:
-        result[0] = "Invalid score"
+        return "Invalid score"
     elif score >= 90:
-        result[0] = "Excellent"
+        return "Excellent"
     elif score >= 50:
-        result[0] = "Passable"
+        return "Passable"
     else:
-        result[0] = "Bad"
+        return "Bad"
+
 main()

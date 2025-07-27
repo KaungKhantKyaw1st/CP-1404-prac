@@ -2,27 +2,20 @@
 # It contains the declarations of the widgets that will be displayed.
 BoxLayout:
     orientation: 'vertical'
-
     Label:
         text: app.status_text
-        font_size: 60
+        font_size: 30
         size_hint_y: 0.2
-
     BoxLayout:
         orientation: 'horizontal'
-
         Button:
-            text: "Increase"
+            text: "Up"
             on_press: app.handle_press(1)
-
         Button:
-            text: "Decrease"
+            text: "Down"
             on_press: app.handle_press(-1)
-
     BoxLayout:
-        id: container_box
-
+        id: names_box
     Label:
-        text: "Success!"
-        size_hint_y: 0.1
-#main
+        text: "I did this :)"
+

@@ -46,3 +46,4 @@ print(large_numbers)
 # TODO: (advanced) List comprehension and join method to create a string of last names from full names longer than 11 characters
 long_names_last_names = ", ".join([full_name.split()[-1] for full_name in full_names if len(full_name) > 11])
 print(long_names_last_names)
+
