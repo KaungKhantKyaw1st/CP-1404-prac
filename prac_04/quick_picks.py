@@ -14,3 +14,8 @@ for _ in range(quick_pick_count):
             selected_numbers.append(random_pick)
     selected_numbers.sort()
     print(" ".join(f"{number:2}" for number in selected_numbers))  # Renamed loop variable
+
+
+
+
+

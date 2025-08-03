@@ -11,3 +11,4 @@ max_word_length = max(len(word) for word in sorted_words)
 
 for word in sorted_words:
     print(f"{word:{max_word_length}} : {word_to_count[word]}")
+
